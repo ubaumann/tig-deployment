@@ -53,6 +53,8 @@ services:
       - '57400:57400' # GRPC
     networks:
       - telegraf_influxdb
+    depends_on:
+      - influxdb
     volumes:
      - ./services/telegraf/etc_telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
 networks:
