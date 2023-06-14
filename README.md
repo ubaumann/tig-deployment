@@ -5,7 +5,6 @@
 - Telegraf
 - InfluxDB
 - Grafana
-- Chronograf
 
 ## Deploy
 
