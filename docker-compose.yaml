@@ -25,6 +25,7 @@ services:
       - influxdb_grafana
       - telegraf_influxdb
     environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
       - DOCKER_INFLUXDB_INIT_ORG=${DOCKER_INFLUXDB_INIT_ORG:-myorg}
       - DOCKER_INFLUXDB_INIT_BUCKET=${DOCKER_INFLUXDB_INIT_BUCKET:-data}
       - DOCKER_INFLUXDB_ADMIN_ENABLED=${DOCKER_INFLUXDB_ADMIN_ENABLE:-true}
